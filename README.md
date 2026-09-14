@@ -16,7 +16,7 @@ Some projects have public source code; others are developed in private repositor
 | iFlyWeb | AI-assisted website creation, editing and publishing | Personal development within the iFlySEO ecosystem | Private |
 | Arista | Marketplace connecting clients with professional mountain guides | Built with [Javier Lucía Marco](https://github.com/JLM-2000) | Private |
 | [Climber Indoor Cycling](https://github.com/jcasasus5/cycling-app) | Browser-based indoor training using real climbing profiles and smart trainers | Personal project, from application to deployment | Public |
-| Tutoría | Joint project maintained in a separate GitHub organization | Built with [Manuel San Román García](https://github.com/manuelsanroman) | Organization repository |
+| [Tutoría](https://github.com/TUTORIA-AI) | AI tutoring grounded in educational content through RAG | Full-stack, RAG and AWS development with [Manuel San Román García](https://github.com/manuelsanroman) · 2025 | Private |
 | [World Cup 2026 Prediction Pool](https://github.com/jcasasus5/porra-mundial-2026) | Match predictions, automated results and shared rankings | Personal project, from application to deployment | Public |
 | [Arturito Casasus](https://github.com/arturitoCasasus) | My personal OpenClaw AI agent, with its own GitHub account | Personal agent setup and ongoing development | Public profile |
 
@@ -58,9 +58,19 @@ I built the route editor and training interface, Bluetooth integration, activity
 
 [Source code](https://github.com/jcasasus5/cycling-app) · [Web app](https://cycling-app-xi.vercel.app)
 
-## Tutoría — collaboration with Manuel San Román
+## Tutoría — AI tutoring grounded in course material
 
-A project I built with [Manuel San Román García](https://github.com/manuelsanroman), maintained in a separate GitHub organization. It is part of my personal project work beyond the repositories hosted on this account.
+**2025 · Approximately January–November** · Built with [Manuel San Román García](https://github.com/manuelsanroman).
+
+Tutoría was an education startup project using generative AI and retrieval-augmented generation (RAG) to provide contextual tutoring based on specific learning materials. The platform connected with university learning systems such as Blackboard, bringing educational content into the tutoring experience.
+
+I worked across the product and its technical infrastructure: a Next.js frontend, a Python / Flask API and Auth0 authentication, together with the RAG pipeline. Educational documents were processed and indexed using embeddings; semantic search retrieved relevant passages to give the LLM context for its answers.
+
+I also built the AWS infrastructure around the application, with EC2 for the backend, S3 for documents and files, and RDS for the database. The result combined user accounts, document storage, retrieval and answer generation in a complete web application.
+
+**Stack:** Next.js · Python · Flask · Auth0 · Generative AI · RAG · Embeddings / semantic search · AWS EC2 · S3 · RDS
+
+[GitHub organization](https://github.com/TUTORIA-AI) · Source code maintained in private repositories.
 
 ## World Cup 2026 Prediction Pool
 
