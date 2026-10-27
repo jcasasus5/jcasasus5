@@ -18,6 +18,7 @@ Some projects have public source code; others are developed in private repositor
 | [Climber Indoor Cycling](https://github.com/jcasasus5/cycling-app) | Browser-based indoor training using real climbing profiles and smart trainers | Personal project, from application to deployment | Public |
 | [Tutoría](https://github.com/TUTORIA-AI) | AI tutoring grounded in educational content through RAG | Full-stack, RAG and AWS development with [Manuel San Román García](https://github.com/manuelsanroman) · 2025 | Private |
 | [World Cup 2026 Prediction Pool](https://github.com/jcasasus5/porra-mundial-2026) | Match predictions, automated results and shared rankings | Personal project, from application to deployment | Public |
+| [fiscal-es](https://github.com/jcasasus5/fiscal-es) | AI agent plugin and MCP server that prepares Spanish VAT returns (models 303 and 390) | Personal project, from design to release | Public |
 | [Arturito Casasus](https://github.com/arturitoCasasus) | My personal OpenClaw AI agent, with its own GitHub account | Personal agent setup and ongoing development | Public profile |
 
 ## iFlySEO — AI content and publishing
@@ -81,6 +82,18 @@ I built the participant and admin flows, scoring rules, rankings and automated r
 **Stack:** Next.js · React · TypeScript · Tailwind CSS · Supabase Auth · PostgreSQL · Vercel
 
 [Source code](https://github.com/jcasasus5/porra-mundial-2026) · [Web app](https://porra-mundial-2026-topaz.vercel.app)
+
+## fiscal-es — VAT returns prepared by an AI agent
+
+A personal project that lets an AI agent act as the accountant for a Spanish freelancer's VAT returns: the quarterly model 303 and the annual model 390. I ask the agent for a return; it gathers the invoices with its own tools (folders, email), asks whatever it needs to know about my tax situation, explains the result and produces the official file ready to import on the Spanish Tax Agency's website. I review, sign and submit it myself.
+
+The agent orchestrates, but every amount is computed deterministically by the MCP tools. They keep a local invoice ledger with validation and an audit trail, calculate each box of the return and generate the file directly from the Tax Agency's official record-layout spreadsheets, which they check for new versions before every return. When there is a doubt, the agent searches the official instructions for that year instead of answering from memory. Everything runs locally: the tool never files anything or handles certificates.
+
+It works with Claude Code, Codex and OpenClaw as a plugin marketplace, as a standalone MCP server or from the command line.
+
+**Stack:** Python · MCP (FastMCP) · SQLite · openpyxl · pypdf · Typer · Claude Code and Codex plugins
+
+[Source code](https://github.com/jcasasus5/fiscal-es)
 
 ## Arturito Casasus — my personal OpenClaw agent
 
